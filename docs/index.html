@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>EMVision · Noeul Soft</title>
+<meta name="description" content="노을소프트 EMVision — 에지 패턴 매칭, 학습 검사, 3D 정합, 캘리브레이션과 설비 통신을 하나로 담은 산업용 머신비전 소프트웨어.">
+<meta name="theme-color" content="#0c0a1d">
+<meta property="og:type" content="website">
+<meta property="og:title" content="EMVision · Noeul Soft">
+<meta property="og:description" content="생산 라인의 눈을 하나의 소프트웨어로. Windows · Raspberry Pi · Linux · Android.">
+<meta property="og:image" content="https://rubiya82.github.io/EMVision-Releases/assets/img/og.png">
+<meta property="og:url" content="https://rubiya82.github.io/EMVision-Releases/">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="assets/css/style.css?v=2">
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/"
+} }
+</script>
+</head>
+<body>
+<div class="progress" aria-hidden="true"></div>
+
+<!-- ───── 내비게이션 ───── -->
+<header class="nav" id="nav">
+  <div class="nav-in">
+    <a class="brand" href="#top" aria-label="Noeul Soft">
+      <svg viewBox="0 0 32 32" width="26" height="26" aria-hidden="true"><defs><linearGradient id="lg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffcf7a"/><stop offset=".55" stop-color="#ff7a59"/><stop offset="1" stop-color="#c2407a"/></linearGradient></defs><circle cx="16" cy="18" r="10" fill="url(#lg)"/><rect x="2" y="19" width="28" height="2.2" rx="1.1" fill="#0c0a1d"/><rect x="5" y="23.4" width="22" height="1.8" rx=".9" fill="#0c0a1d"/></svg>
+      <span>Noeul Soft</span>
+    </a>
+    <nav class="links" aria-label="주요 메뉴">
+      <a href="#overview" data-i18n="nav.overview">개요</a>
+      <a href="#features" data-i18n="nav.features">기능</a>
+      <a href="#lineup" data-i18n="nav.lineup">제품군</a>
+      <a href="#download" data-i18n="nav.download">다운로드</a>
+      <a href="#contact" data-i18n="nav.contact">문의</a>
+    </nav>
+    <div class="nav-r">
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" data-lang="ko" aria-pressed="true">KO</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <a class="btn sm glow" href="#contact" data-i18n="nav.cta">도입 문의</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ───── 히어로: WebGL 노을 ───── -->
+<section class="hero">
+  <canvas id="sky" aria-hidden="true"></canvas>
+  <div class="hero-in">
+    <p class="eyebrow reveal" data-i18n="hero.eyebrow">Noeul Soft 산업용 머신비전</p>
+    <h1 class="hero-title reveal">EMVision</h1>
+    <p class="hero-lead reveal" data-i18n="hero.lead">보는 것을, 판단으로.</p>
+    <p class="hero-sub reveal" data-i18n="hero.sub">에지 패턴 매칭부터 학습 검사, 3D 정합, 캘리브레이션, 설비 통신까지.<br>생산 라인의 눈을 하나의 소프트웨어로.</p>
+    <div class="hero-cta reveal">
+      <a class="btn glow" href="#download" data-i18n="hero.dl">최신 버전 받기</a>
+      <a class="btn ghost" href="#demo"><span data-i18n="hero.watch">직접 움직여 보기</span> <span aria-hidden="true">→</span></a>
+    </div>
+    <p class="hero-meta reveal"><span class="dot"></span><span id="heroVer">v2.2.15</span> · Windows · Raspberry Pi · Linux · Android</p>
+  </div>
+  <div class="scroll-cue" aria-hidden="true"><span></span></div>
+</section>
+
+<!-- ───── 개요 / 스크린샷 ───── -->
+<section class="overview" id="overview">
+  <div class="wrap">
+    <h2 class="display reveal"><span data-i18n="ov.t1">씬 하나에</span><br><span class="grad" data-i18n="ov.t2">검사 전부를.</span></h2>
+    <p class="lede reveal" data-i18n="ov.p">촬상, 위치 찾기, 치수, 판정, 출력. 처리 항목을 순서대로 쌓으면 그것이 곧 검사입니다. 코드 한 줄 없이 라인을 구성하고, 필요하면 TCP · EtherNet/IP · 웹 API로 무엇이든 제어합니다.</p>
+  </div>
+  <div class="device reveal-scale" id="device">
+    <div class="win">
+      <div class="win-bar"><i></i><i></i><i></i><span>EMVision — Scene 0</span></div>
+      <img src="assets/img/main.png" width="1600" height="1000" alt="EMVision 메인 화면: 플로우 목록, 화상 창, 결과 표" loading="eager">
+    </div>
+  </div>
+</section>
+
+<!-- ───── 숫자 ───── -->
+<section class="stats">
+  <div class="wrap grid4">
+    <div class="stat reveal"><b data-count="7" data-suffix=" ms">0</b><span data-i18n="st.1">20 MP 표면 결함 계측</span></div>
+    <div class="stat reveal"><b data-count="0.2" data-dec="1" data-suffix=" s">0</b><span data-i18n="st.2">정상 165장 학습</span></div>
+    <div class="stat reveal"><b data-count="0.1" data-dec="1" data-suffix=" ms">0</b><span data-i18n="st.3">다중 카메라 동시 촬상 시점 차</span></div>
+    <div class="stat reveal"><b data-count="34">0</b><span data-i18n="st.4">Blob 특징량</span></div>
+  </div>
+</section>
+
+<!-- ───── 에지 매칭 데모 ───── -->
+<section class="demo dark-band" id="demo">
+  <div class="wrap">
+    <p class="eyebrow reveal" data-i18n="dm.eye">에지 패턴 매칭</p>
+    <h2 class="display reveal" data-i18n="dm.t">돌아가도, 가려져도, 찾습니다.</h2>
+    <p class="lede reveal" data-i18n="dm.p">피라미드 탐색과 AVX2 · NEON 벡터 연산, 멀티스레드. 회전과 배율을 함께 훑고 ICP로 서브픽셀까지 다듬습니다. 화면을 드래그해 부품을 옮겨 보세요.</p>
+  </div>
+  <div class="demo-stage reveal-scale">
+    <div class="viewer">
+      <canvas id="matchCv" width="1280" height="720" aria-label="에지 패턴 매칭 데모"></canvas>
+      <div class="hud">
+        <div class="hud-l"><span class="judge" id="mJudge">OK</span><span class="mono" id="mTime">--.- ms</span></div>
+        <div class="hud-r mono" id="mRead">X — Y — θ — CR —</div>
+      </div>
+      <div class="seg" role="tablist" aria-label="보기">
+        <button type="button" role="tab" data-mode="0" aria-selected="false" data-i18n="dm.m0">원본</button>
+        <button type="button" role="tab" data-mode="1" aria-selected="false" data-i18n="dm.m1">에지</button>
+        <button type="button" role="tab" data-mode="2" aria-selected="true" data-i18n="dm.m2">매칭</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ───── 기능 벤토 ───── -->
+<section class="features light" id="features">
+  <div class="wrap">
+    <p class="eyebrow reveal" data-i18n="ft.eye">하나의 툴, 모든 공정</p>
+    <h2 class="display reveal" data-i18n="ft.t">라인에 필요한 것은<br>이미 들어 있습니다.</h2>
+  </div>
+  <div class="wrap bento">
+    <article class="card c-wide reveal">
+      <div class="card-tx">
+        <h3 data-i18n="f1.t">학습 검사</h3>
+        <p data-i18n="f1.p">분류, 표면 결함, 문자 읽기, 물체 검출. 외부 딥러닝 라이브러리 없이 수십 장으로 학습하고, 교차검증으로 검출률을 숫자로 확인한 뒤 라인에 넣습니다.</p>
+      </div>
+      <div class="defect">
+        <canvas id="defectCv" width="720" height="420" aria-label="표면 결함 히트맵 데모"></canvas>
+        <div class="defect-ui">
+          <label><span data-i18n="f1.th">판정 임계값</span> <output id="thOut" class="mono">100</output></label>
+          <input type="range" id="thRange" min="40" max="180" value="100" aria-label="임계값">
+          <span class="pill" id="defJudge">NG · 2</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="card reveal">
+      <div class="ico">
+        <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="17" class="s"/><circle cx="24" cy="24" r="7" class="f"/><path d="M24 3v8M24 37v8M3 24h8M37 24h8" class="s"/></svg>
+      </div>
+      <h3 data-i18n="f2.t">캘리브레이션</h3>
+      <p data-i18n="f2.p">화상 마스터 · PLC 마스터 · 차트 캘리브레이션. 카메라 여러 대를 한 번에 같은 로봇 좌표계로 맞추고, 렌즈 왜곡과 사다리꼴까지 보정합니다.</p>
+    </article>
+
+    <article class="card reveal">
+      <div class="ico">
+        <svg viewBox="0 0 48 48"><rect x="6" y="10" width="15" height="12" rx="3" class="s"/><rect x="27" y="26" width="15" height="12" rx="3" class="s"/><path d="M21 16h6a4 4 0 0 1 4 4v6M27 32h-6a4 4 0 0 1-4-4v-6" class="s"/></svg>
+      </div>
+      <h3 data-i18n="f3.t">설비 통신</h3>
+      <p data-i18n="f3.p">무순서 TCP(서버·클라이언트), EtherNet/IP 암시적 I/O, 공유 메모리 화상 공유, 웹 API. PLC와 로봇이 바로 읽는 형식 그대로.</p>
+    </article>
+
+    <article class="card c-tall dark reveal">
+      <h3 data-i18n="f4.t">3D 정합</h3>
+      <p data-i18n="f4.p">스테레오 포인트 클라우드 위에 STL · OBJ · PLY 모델을 맞춰 6축 자세를 냅니다. 드래그해서 돌려 보세요.</p>
+      <div class="cloud" id="cloudBox">
+        <div class="cloud-hud mono"><span>ICP</span><span id="icpIt">iter 0</span><span id="icpRms">RMS —</span></div>
+      </div>
+    </article>
+
+    <article class="card reveal">
+      <div class="ico">
+        <svg viewBox="0 0 48 48"><path d="M6 34c6-14 12-14 18 0s12 14 18 0" class="s"/><circle cx="12" cy="27" r="3" class="f"/><circle cx="24" cy="34" r="3" class="f"/><circle cx="36" cy="27" r="3" class="f"/></svg>
+      </div>
+      <h3 data-i18n="f5.t">트래킹</h3>
+      <p data-i18n="f5.p">컨베이어 위 물체에 ID를 붙이고 속도 · 예측 위치 · 게이트 통과를 셉니다. 검출기를 바꿔도 추적은 그대로.</p>
+    </article>
+
+    <article class="card reveal">
+      <div class="ico">
+        <svg viewBox="0 0 48 48"><rect x="7" y="9" width="34" height="24" rx="4" class="s"/><path d="M17 41h14M24 33v8" class="s"/><path d="M14 25l6-7 5 5 9-9" class="s"/></svg>
+      </div>
+      <h3 data-i18n="f6.t">웹 화면 · 헤드리스</h3>
+      <p data-i18n="f6.p">설치 없이 브라우저로 화상 · 결과 · 플로우 · 학습을 보고 조작합니다. 역할별 비밀번호와 같은 기기 키오스크 모드.</p>
+    </article>
+
+    <article class="card reveal">
+      <div class="ico">
+        <svg viewBox="0 0 48 48"><path d="M8 40V12M8 40h32" class="s"/><path d="M15 33l7-9 6 5 10-13" class="s"/><circle cx="38" cy="16" r="3" class="f"/></svg>
+      </div>
+      <h3 data-i18n="f8.t">치수 · 형상 측정</h3>
+      <p data-i18n="f8.p">스캔 에지 직선 · 원, 코너, 에지 피치, Blob 라벨링 34종 특징량. 캘리브레이션을 걸면 그대로 mm.</p>
+    </article>
+
+    <article class="card c-wide grad-card reveal">
+      <div class="card-tx">
+        <h3 data-i18n="f7.t">멈추지 않는 조정</h3>
+        <p data-i18n="f7.p">논스톱 조정 모드는 라인이 계측하는 바로 그 화상으로 사본 씬을 다시 돌립니다. 설정을 다듬는 동안에도 판정은 계속 나갑니다. 확정하면 다음 계측부터 반영.</p>
+      </div>
+      <ul class="chips">
+        <li data-i18n="f7.c1">화상 로깅 (메모리 · 파일)</li>
+        <li data-i18n="f7.c2">오프라인 조정</li>
+        <li data-i18n="f7.c3">마지막 NG 화상</li>
+        <li data-i18n="f7.c4">조작 로그</li>
+        <li data-i18n="f7.c5">서브 화상</li>
+        <li data-i18n="f7.c6">판정 값 체계</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<!-- ───── 플로우 스토리 (스티키) ───── -->
+<section class="flow" id="flow">
+  <div class="wrap flow-grid">
+    <div class="flow-sticky">
+      <div class="flow-panel">
+        <div class="flow-head"><span class="judge big" id="flowJudge">OK</span><span class="mono" id="flowTime">0.00 ms</span></div>
+        <ol class="flow-list" id="flowList">
+          <li data-ms="1.62"><i>0</i><span data-i18n="fl.u0">카메라 화상 입력</span><em class="mono">1.62</em></li>
+          <li data-ms="16.23"><i>1</i><span data-i18n="fl.u1">에지 패턴 서치</span><em class="mono">16.23</em></li>
+          <li data-ms="0.27"><i>2</i><span data-i18n="fl.u2">스캔 에지 (원)</span><em class="mono">0.27</em></li>
+          <li data-ms="1.61"><i>3</i><span data-i18n="fl.u3">Blob 계측</span><em class="mono">1.61</em></li>
+          <li data-ms="0.02"><i>4</i><span data-i18n="fl.u4">계산</span><em class="mono">0.02</em></li>
+          <li data-ms="0.03"><i>5</i><span data-i18n="fl.u5">데이터 출력 (이더넷)</span><em class="mono">0.03</em></li>
+          <li data-ms="0.00"><i>6</i><span data-i18n="fl.u6">결과 표시</span><em class="mono">0.00</em></li>
+        </ol>
+      </div>
+    </div>
+    <div class="flow-steps">
+      <div class="step" data-upto="0"><p class="eyebrow" data-i18n="fs.e1">01 촬상</p><h3 data-i18n="fs.t1">여러 카메라를 한 순간에.</h3><p data-i18n="fs.p1">동시 촬상은 카메라 사이 시점 차를 0.1 ms 수준으로 줄입니다. 움직이는 자재도 같은 순간을 봅니다.</p></div>
+      <div class="step" data-upto="1"><p class="eyebrow" data-i18n="fs.e2">02 위치</p><h3 data-i18n="fs.t2">찾고, 맞추고.</h3><p data-i18n="fs.p2">에지 패턴 매칭이 위치 · 각도 · 배율을 찾고, 뒤 유닛의 영역이 그 자세를 따라갑니다.</p></div>
+      <div class="step" data-upto="3"><p class="eyebrow" data-i18n="fs.e3">03 측정</p><h3 data-i18n="fs.t3">치수와 형상을 숫자로.</h3><p data-i18n="fs.p3">스캔 에지, 원, 코너, Blob 34종 특징량. 캘리브레이션을 걸면 결과가 곧 mm 입니다.</p></div>
+      <div class="step" data-upto="6"><p class="eyebrow" data-i18n="fs.e4">04 판정 · 출력</p><h3 data-i18n="fs.t4">설비가 바로 읽는 답.</h3><p data-i18n="fs.p4">식으로 판정하고 TCP · EtherNet/IP · 공유 메모리로 내보냅니다. 촬상이 끝나는 즉시 OK 를 돌려 줘 라인이 기다리지 않습니다.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ───── 갤러리 ───── -->
+<section class="gallery dark-band">
+  <div class="wrap">
+    <p class="eyebrow reveal" data-i18n="gl.eye">화면</p>
+    <h2 class="display reveal" data-i18n="gl.t">현장에서 쓰는 그대로.</h2>
+  </div>
+  <div class="rail" id="rail" tabindex="0" aria-label="화면 갤러리">
+    <figure class="shot"><div class="win"><div class="win-bar"><i></i><i></i><i></i></div><img src="assets/img/unitset_edge.png" width="1521" height="977" alt="에지 패턴 서치 설정 화면" loading="lazy"></div><figcaption data-i18n="gl.c1">유닛 설정 — 모델 등록과 테스트 계측</figcaption></figure>
+    <figure class="shot"><div class="win"><div class="win-bar"><i></i><i></i><i></i></div><img src="assets/img/vmc_calib.png" width="1521" height="977" alt="화상 마스터 캘리브레이션 화면" loading="lazy"></div><figcaption data-i18n="gl.c2">화상 마스터 캘리브레이션</figcaption></figure>
+    <figure class="shot"><div class="win"><div class="win-bar"><i></i><i></i><i></i></div><img src="assets/img/flowedit.png" width="1096" height="719" alt="플로우 편집 화면" loading="lazy"></div><figcaption data-i18n="gl.c3">플로우 편집 — 처리 항목 쌓기</figcaption></figure>
+    <figure class="shot"><div class="win"><div class="win-bar"><i></i><i></i><i></i></div><img src="assets/img/unitset_blob.png" width="1521" height="977" alt="Blob 계측 설정 화면" loading="lazy"></div><figcaption data-i18n="gl.c4">Blob 라벨링 — 추출 · 판정 조건</figcaption></figure>
+    <figure class="shot"><div class="win"><div class="win-bar"><i></i><i></i><i></i></div><img src="assets/img/shared_mfc.png" width="926" height="714" alt="화상 공유 예제 프로그램" loading="lazy"></div><figcaption data-i18n="gl.c5">화상 공유 — 설비 프로그램에서 받기</figcaption></figure>
+    <figure class="shot"><div class="win"><div class="win-bar"><i></i><i></i><i></i></div><img src="assets/img/web.png" width="576" height="569" alt="웹 서버 설정 화면" loading="lazy"></div><figcaption data-i18n="gl.c6">웹 서버 — 브라우저로 원격 조작</figcaption></figure>
+  </div>
+  <div class="rail-nav wrap"><button type="button" class="round" id="railPrev" aria-label="이전">‹</button><button type="button" class="round" id="railNext" aria-label="다음">›</button></div>
+</section>
+
+<!-- ───── 제품군 ───── -->
+<section class="lineup light" id="lineup">
+  <div class="wrap">
+    <p class="eyebrow reveal" data-i18n="ln.eye">제품군</p>
+    <h2 class="display reveal" data-i18n="ln.t">같은 코어, 어디서나.</h2>
+    <p class="lede reveal" data-i18n="ln.p">모든 플랫폼이 같은 C++17 비전 코어를 씁니다. 씬 파일 하나가 PC 에서도, 라즈베리파이에서도 같은 판정을 냅니다.</p>
+  </div>
+  <div class="wrap lineup-grid">
+    <article class="prod reveal" style="--h:28">
+      <div class="prod-art"><svg viewBox="0 0 120 90"><rect x="10" y="8" width="100" height="62" rx="6" class="s"/><rect x="18" y="16" width="30" height="46" rx="2" class="f2"/><rect x="54" y="16" width="48" height="46" rx="2" class="f"/><path d="M45 82h30M60 70v12" class="s"/></svg></div>
+      <h3>EMVision <span>for Windows</span></h3>
+      <p data-i18n="ln.w">데스크톱 설정 · 운용. USB · Basler 카메라 8대, 트레이 · 숨김 실행, 학습 화면, 3D 뷰어.</p>
+      <span class="tag ok" data-i18n="ln.avail">다운로드 제공</span>
+    </article>
+    <article class="prod reveal" style="--h:12">
+      <div class="prod-art"><svg viewBox="0 0 120 90"><rect x="22" y="14" width="76" height="56" rx="8" class="s"/><circle cx="40" cy="32" r="6" class="f"/><rect x="56" y="26" width="30" height="5" rx="2.5" class="f2"/><rect x="56" y="36" width="22" height="5" rx="2.5" class="f2"/><path d="M30 70v8M48 70v8M66 70v8M84 70v8" class="s"/></svg></div>
+      <h3>EMVision <span>Edge</span></h3>
+      <p data-i18n="ln.e">라즈베리파이 · 리눅스 헤드리스. 화면은 키오스크 브라우저나 원격 브라우저. Pi Zero 2 W 까지 고려한 메모리 설계.</p>
+      <span class="tag ok" data-i18n="ln.availL">Linux x86_64 제공 · ARM 문의</span>
+    </article>
+    <article class="prod reveal" style="--h:340">
+      <div class="prod-art"><svg viewBox="0 0 120 90"><rect x="40" y="6" width="40" height="78" rx="8" class="s"/><circle cx="60" cy="22" r="7" class="f"/><rect x="48" y="36" width="24" height="30" rx="3" class="f2"/></svg></div>
+      <h3>EMVision <span>Mobile</span></h3>
+      <p data-i18n="ln.m">안드로이드 폰 카메라로 같은 검사를. 앱 안에서 헤드리스 런타임이 돌고 화면은 웹 UI 그대로.</p>
+      <span class="tag" data-i18n="ln.ask">문의</span>
+    </article>
+    <article class="prod reveal" style="--h:300">
+      <div class="prod-art"><svg viewBox="0 0 120 90"><path d="M30 20l-16 25 16 25M90 20l16 25-16 25M70 14L50 76" class="s"/></svg></div>
+      <h3>EMVision <span>Integration Kit</span></h3>
+      <p data-i18n="ln.i">공유 메모리 화상 읽기(C++ · C#), MFC 예제, 웹 API 문서. 설비 프로그램에 검사 화면을 바로 붙입니다.</p>
+      <span class="tag ok" data-i18n="ln.incl">배포본에 포함</span>
+    </article>
+  </div>
+</section>
+
+<!-- ───── 다운로드 ───── -->
+<section class="download dark-band" id="download">
+  <div class="sun-sm" aria-hidden="true"></div>
+  <div class="wrap narrow">
+    <p class="eyebrow reveal" data-i18n="dl.eye">다운로드</p>
+    <h2 class="display reveal"><span data-i18n="dl.t">지금 바로 시작하세요.</span></h2>
+    <p class="lede reveal" data-i18n="dl.p">설치 후 기기 정보 파일을 보내 주시면 인증 파일을 발급해 드립니다. 인증 전에도 계측은 동작하며, 씬 편집 · 저장은 인증 후 열립니다.</p>
+    <div class="rel reveal" id="rel">
+      <div class="rel-head"><b id="relName">EMVision</b><span id="relDate" class="mono"></span></div>
+      <ul class="rel-list" id="relList">
+        <li class="skel"></li><li class="skel"></li><li class="skel"></li>
+      </ul>
+      <a class="link" id="relAll" href="https://github.com/Rubiya82/EMVision-Releases/releases" target="_blank" rel="noopener"><span data-i18n="dl.all">모든 버전과 릴리스 노트</span> →</a>
+    </div>
+    <p class="fine reveal" data-i18n="dl.req">Windows 10/11 x64 · Visual C++ x64 런타임 · Linux x86_64 (libfreetype6, fonts-noto-cjk)</p>
+  </div>
+</section>
+
+<!-- ───── 문의 ───── -->
+<section class="contact" id="contact">
+  <div class="wrap narrow center">
+    <h2 class="display reveal"><span data-i18n="ct.t1">라인을 보여 주세요.</span><br><span class="grad" data-i18n="ct.t2">검사를 함께 설계합니다.</span></h2>
+    <p class="lede reveal" data-i18n="ct.p">도입 상담, 라이선스 발급, 시험 화상 검토, 맞춤 처리 항목 개발.</p>
+    <div class="hero-cta reveal">
+      <a class="btn glow" href="mailto:noeulsoft@gmail.com?subject=EMVision%20%EB%8F%84%EC%9E%85%20%EB%AC%B8%EC%9D%98" data-i18n="ct.mail">메일로 문의하기</a>
+      <button type="button" class="btn ghost" id="copyMail"><span class="mono">noeulsoft@gmail.com</span></button>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <div class="brand"><svg viewBox="0 0 32 32" width="20" height="20" aria-hidden="true"><circle cx="16" cy="18" r="10" fill="url(#lg)"/><rect x="2" y="19" width="28" height="2.2" rx="1.1" fill="#0c0a1d"/></svg><span>Noeul Soft</span></div>
+    <p data-i18n="ft.copy">© 2026 Noeul Soft. EMVision 은 노을소프트의 산업용 머신비전 소프트웨어입니다.</p>
+    <a href="https://github.com/Rubiya82/EMVision-Releases" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="assets/js/i18n.js?v=2"></script>
+<script src="assets/js/main.js?v=2"></script>
+<script src="assets/js/sky.js?v=2"></script>
+<script src="assets/js/match.js?v=2"></script>
+<script src="assets/js/defect.js?v=2"></script>
+<script type="module" src="assets/js/cloud.js?v=2"></script>
+</body>
+</html>
