@@ -1,0 +1,22 @@
+{
+  "assetName": "EMVision-update-2.2.19-win-x64.zip",
+  "downloadUrl": "https://github.com/Rubiya82/EMVision-Releases/releases/download/v2.2.19/EMVision-update-2.2.19-win-x64.zip",
+  "exePath": "EMVision.exe",
+  "exeSha256": "174cd8a2018f3c3ee3c8d91706bfd5cdcae29a93b55d1c82ea0dca5130dc64de",
+  "exeSizeBytes": 10278912,
+  "keyId": "emvision-update-2026",
+  "platform": "windows-x64",
+  "published": true,
+  "publishedAt": "2026-11-01T23:45:01+09:00",
+  "releaseNotes": {
+    "en": "Product auto-update (Settings > Software update)",
+    "ko": "제품 자동 업데이트 추가 (설정 > 소프트웨어 업데이트)"
+  },
+  "releaseTag": "v2.2.19",
+  "schemaVersion": 1,
+  "sha256": "67d0bfac3783c0bdd71d1bafac5ea9964e7c651b7709e25e81344d30dee2b854",
+  "signature": "c8d6b0303ff4b77802407a3e117d48d097c014a4a2b95b3ed4208f43268e56d19cd3e95ba3f93f7d14d113d9d4e4c739529464b190e55bb374ef2af4f7869660",
+  "signatureAlgorithm": "ecdsa-p256-sha256",
+  "sizeBytes": 4293609,
+  "version": "2.2.19"
+}
