@@ -1,6 +1,6 @@
 // 한국어는 HTML 본문이 원문이다. 여기에는 영어만 둔다.
 window.EMV_EN = {
-  "nav.overview": "Overview", "nav.features": "Features", "nav.lineup": "Lineup", "nav.download": "Download", "nav.contact": "Contact", "nav.cta": "Talk to us",
+  "nav.overview": "Overview", "nav.features": "Features", "nav.lineup": "Lineup", "nav.download": "Download", "nav.contact": "Contact", "nav.cta": "Talk to us", "nav.top": "Back to top",
   "hero.eyebrow": "Industrial machine vision by Noeul Soft",
   "hero.lead": "Sight, turned into decisions.",
   "hero.sub": "Edge pattern matching, learned inspection, 3D alignment, calibration and factory I/O.<br>The eyes of your production line, in one piece of software.",
