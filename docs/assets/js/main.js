@@ -48,11 +48,12 @@
   $$('[data-count]').forEach(el => cio.observe(el));
 
   // ── 스크롤: 내비 배경, 화면 기울기, 현재 구간 ──
-  const nav = $('#nav'), devWin = $('#device .win'), dev = $('#device');
+  const nav = $('#nav'), devWin = $('#device .win'), dev = $('#device'), toTop = $('#toTop');
   const secLinks = $$('.links a').map(a => [a, $(a.getAttribute('href'))]);
   function onScroll() {
     const y = scrollY, vh = innerHeight;
     nav.classList.toggle('solid', y > 40);
+    toTop.classList.toggle('show', y > 600);
     if (devWin && !reduce) {
       const r = dev.getBoundingClientRect();
       const k = Math.min(1, Math.max(0, (vh - r.top) / (vh * .9)));
@@ -64,6 +65,7 @@
     flowUpdate();
   }
   addEventListener('scroll', onScroll, { passive: true });
+  toTop.onclick = () => scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
 
   // ── 플로우 스토리 ──
   const steps = $$('.flow-steps .step'), items = $$('#flowList li');
