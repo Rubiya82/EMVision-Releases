@@ -127,8 +127,9 @@
     $('#relName').textContent = rel.name || rel.tag_name;
     $('#relDate').textContent = (rel.published_at || '').slice(0, 10);
     $('#relAll').href = rel.html_url;
+    // EMVision-update-*.zip 은 프로그램의 자동 업데이트가 받는 파일이라 사람이 받는 목록에서 뺀다 (docs/UPDATE.md)
     const order = ['WIN', 'LNX', 'PDF', 'SUM', 'INFO', 'FILE'];
-    const assets = rel.assets.map(a => ({ a, k: kind(a.name) })).sort((x, y) => order.indexOf(x.k[0]) - order.indexOf(y.k[0]));
+    const assets = rel.assets.filter(a => !/^EMVision-update-/i.test(a.name)).map(a => ({ a, k: kind(a.name) })).sort((x, y) => order.indexOf(x.k[0]) - order.indexOf(y.k[0]));
     list.innerHTML = '';
     for (const { a, k } of assets) {
       const li = document.createElement('li'), link = document.createElement('a');
