@@ -1,22 +1,22 @@
 {
-  "assetName": "EMVision-update-2.2.19-win-x64.zip",
-  "downloadUrl": "https://github.com/Rubiya82/EMVision-Releases/releases/download/v2.2.19/EMVision-update-2.2.19-win-x64.zip",
+  "assetName": "EMVision-update-2.2.20-win-x64.zip",
+  "downloadUrl": "https://github.com/Rubiya82/EMVision-Releases/releases/download/v2.2.20/EMVision-update-2.2.20-win-x64.zip",
   "exePath": "EMVision.exe",
-  "exeSha256": "174cd8a2018f3c3ee3c8d91706bfd5cdcae29a93b55d1c82ea0dca5130dc64de",
-  "exeSizeBytes": 10278912,
+  "exeSha256": "d256fa355011e5a84b7ff2d2906a4a5e06f885d820c3ce1d8ea4d987b0f76252",
+  "exeSizeBytes": 10287616,
   "keyId": "emvision-update-2026",
   "platform": "windows-x64",
   "published": true,
-  "publishedAt": "2026-11-01T23:45:01+09:00",
+  "publishedAt": "2026-11-03T00:47:07+09:00",
   "releaseNotes": {
-    "en": "Product auto-update (Settings > Software update)",
-    "ko": "제품 자동 업데이트 추가 (설정 > 소프트웨어 업데이트)"
+    "en": "Expression symbol SEQ (measurement number)",
+    "ko": "식에 계측 번호 SEQ 추가"
   },
-  "releaseTag": "v2.2.19",
+  "releaseTag": "v2.2.20",
   "schemaVersion": 1,
-  "sha256": "67d0bfac3783c0bdd71d1bafac5ea9964e7c651b7709e25e81344d30dee2b854",
-  "signature": "c8d6b0303ff4b77802407a3e117d48d097c014a4a2b95b3ed4208f43268e56d19cd3e95ba3f93f7d14d113d9d4e4c739529464b190e55bb374ef2af4f7869660",
+  "sha256": "a8f986cd2dcf4243c3bb7c3c07fbf6b00413454399b6ba40d668dc54b19ae0c8",
+  "signature": "beffbd6ada32a8b121cbd0f74190bacf33238ccb584da028b8a4b4b09948e6efd42edb0957b03ba6f4065a7ad518c73908946c51e025ec81abc2753374cd1ce1",
   "signatureAlgorithm": "ecdsa-p256-sha256",
-  "sizeBytes": 4293609,
-  "version": "2.2.19"
+  "sizeBytes": 4298205,
+  "version": "2.2.20"
 }
