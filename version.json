@@ -1,22 +1,22 @@
 {
-  "assetName": "EMVision-update-2.2.20-win-x64.zip",
-  "downloadUrl": "https://github.com/Rubiya82/EMVision-Releases/releases/download/v2.2.20/EMVision-update-2.2.20-win-x64.zip",
+  "assetName": "EMVision-update-2.2.21-win-x64.zip",
+  "downloadUrl": "https://github.com/Rubiya82/EMVision-Releases/releases/download/v2.2.21/EMVision-update-2.2.21-win-x64.zip",
   "exePath": "EMVision.exe",
-  "exeSha256": "d256fa355011e5a84b7ff2d2906a4a5e06f885d820c3ce1d8ea4d987b0f76252",
-  "exeSizeBytes": 10287616,
+  "exeSha256": "7d5c70dc13fa788813ac29ce81a8f13256ece922584a303bdf89319850e942b6",
+  "exeSizeBytes": 10330624,
   "keyId": "emvision-update-2026",
   "platform": "windows-x64",
   "published": true,
-  "publishedAt": "2026-11-03T00:47:07+09:00",
+  "publishedAt": "2026-11-05T00:18:37+09:00",
   "releaseNotes": {
-    "en": "Expression symbol SEQ (measurement number)",
-    "ko": "식에 계측 번호 SEQ 추가"
+    "en": "Scene reference image; registered image save/load",
+    "ko": "씬 기준 이미지, 등록 화상 저장/불러오기"
   },
-  "releaseTag": "v2.2.20",
+  "releaseTag": "v2.2.21",
   "schemaVersion": 1,
-  "sha256": "a8f986cd2dcf4243c3bb7c3c07fbf6b00413454399b6ba40d668dc54b19ae0c8",
-  "signature": "beffbd6ada32a8b121cbd0f74190bacf33238ccb584da028b8a4b4b09948e6efd42edb0957b03ba6f4065a7ad518c73908946c51e025ec81abc2753374cd1ce1",
+  "sha256": "264adbe88b0021167a3fb01f3810f8cefbf6808f012169181bb921c8776ed3b9",
+  "signature": "fc5b4240ac34bb35f7db24cd74cf98103f8fa8f8cd20f78d5ed5f606e1e68ca8b51ff01ce47032f83ff7f32b8820fd0a9d436db83dd62c5fa5125f0067645908",
   "signatureAlgorithm": "ecdsa-p256-sha256",
-  "sizeBytes": 4298205,
-  "version": "2.2.20"
+  "sizeBytes": 4316155,
+  "version": "2.2.21"
 }
