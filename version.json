@@ -1,22 +1,22 @@
 {
-  "assetName": "EMVision-update-2.2.21-win-x64.zip",
-  "downloadUrl": "https://github.com/Rubiya82/EMVision-Releases/releases/download/v2.2.21/EMVision-update-2.2.21-win-x64.zip",
+  "assetName": "EMVision-update-2.2.22-win-x64.zip",
+  "downloadUrl": "https://github.com/Rubiya82/EMVision-Releases/releases/download/v2.2.22/EMVision-update-2.2.22-win-x64.zip",
   "exePath": "EMVision.exe",
-  "exeSha256": "7d5c70dc13fa788813ac29ce81a8f13256ece922584a303bdf89319850e942b6",
-  "exeSizeBytes": 10330624,
+  "exeSha256": "bd554a1ff6200f958e9e2be202afd2ed43f74acf3f62e04678f58d9056d40484",
+  "exeSizeBytes": 10351104,
   "keyId": "emvision-update-2026",
   "platform": "windows-x64",
   "published": true,
-  "publishedAt": "2026-11-05T00:18:37+09:00",
+  "publishedAt": "2026-11-06T02:57:40+09:00",
   "releaseNotes": {
-    "en": "Scene reference image; registered image save/load",
-    "ko": "씬 기준 이미지, 등록 화상 저장/불러오기"
+    "en": "Masked edge model re-teaching, non-destructive preview, selectable 3/5/7 kernels and calibration progress overlays.",
+    "ko": "에지 모델 재등록·미리보기와 3/5/7 커널 선택, 캘리브레이션 진행 표시 개선"
   },
-  "releaseTag": "v2.2.21",
+  "releaseTag": "v2.2.22",
   "schemaVersion": 1,
-  "sha256": "264adbe88b0021167a3fb01f3810f8cefbf6808f012169181bb921c8776ed3b9",
-  "signature": "fc5b4240ac34bb35f7db24cd74cf98103f8fa8f8cd20f78d5ed5f606e1e68ca8b51ff01ce47032f83ff7f32b8820fd0a9d436db83dd62c5fa5125f0067645908",
+  "sha256": "f309396842a55aa51f1f7736024ad84a4cf0edbb86dbd032908639e46937c9b3",
+  "signature": "a7e89ea15732a87a9d67fd7824ac656a6b8ef5c8b41f1548d2aa124c84a24a85b47524d86c493f9587ae93530cc0b39267cabf5c573c2bf1ebabaf1d519ee59e",
   "signatureAlgorithm": "ecdsa-p256-sha256",
-  "sizeBytes": 4316155,
-  "version": "2.2.21"
+  "sizeBytes": 4328059,
+  "version": "2.2.22"
 }
