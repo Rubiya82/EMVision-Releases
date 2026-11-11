@@ -1,22 +1,22 @@
 {
-  "assetName": "EMVision-update-2.2.22-win-x64.zip",
-  "downloadUrl": "https://github.com/Rubiya82/EMVision-Releases/releases/download/v2.2.22/EMVision-update-2.2.22-win-x64.zip",
+  "assetName": "EMVision-update-2.2.23-win-x64.zip",
+  "downloadUrl": "https://github.com/Rubiya82/EMVision-Releases/releases/download/v2.2.23/EMVision-update-2.2.23-win-x64.zip",
   "exePath": "EMVision.exe",
-  "exeSha256": "bd554a1ff6200f958e9e2be202afd2ed43f74acf3f62e04678f58d9056d40484",
-  "exeSizeBytes": 10351104,
+  "exeSha256": "877917c8a852d739be87d2db59c595698d0385c0cef1a371978c0d4a6f17c744",
+  "exeSizeBytes": 10429952,
   "keyId": "emvision-update-2026",
   "platform": "windows-x64",
   "published": true,
-  "publishedAt": "2026-11-06T02:57:40+09:00",
+  "publishedAt": "2026-11-11T09:53:52+09:00",
   "releaseNotes": {
-    "en": "Masked edge model re-teaching, non-destructive preview, selectable 3/5/7 kernels and calibration progress overlays.",
-    "ko": "에지 모델 재등록·미리보기와 3/5/7 커널 선택, 캘리브레이션 진행 표시 개선"
+    "en": "Edge match search about 5x faster, precise model extraction, calibration validity checks and layout editing display fix.",
+    "ko": "에지 패턴 서치 검색 속도 약 5배 개선과 모델 정밀 추출, 캘리브레이션 유효성 검증, 레이아웃 편집 표시 개선"
   },
-  "releaseTag": "v2.2.22",
+  "releaseTag": "v2.2.23",
   "schemaVersion": 1,
-  "sha256": "f309396842a55aa51f1f7736024ad84a4cf0edbb86dbd032908639e46937c9b3",
-  "signature": "a7e89ea15732a87a9d67fd7824ac656a6b8ef5c8b41f1548d2aa124c84a24a85b47524d86c493f9587ae93530cc0b39267cabf5c573c2bf1ebabaf1d519ee59e",
+  "sha256": "1e49d2ba3fc270112fcf7aced5d6db51da9a089baff0ab527906e3a0b89a0919",
+  "signature": "34741074ff92266f1a53dd7f52ff27c07a43afc58a706c6ace80110b5ad8c34c8761e25699c6442f0e0c05002c53b6ab9c4132ddfc6f8455f96ab787d14731ad",
   "signatureAlgorithm": "ecdsa-p256-sha256",
-  "sizeBytes": 4328059,
-  "version": "2.2.22"
+  "sizeBytes": 4363624,
+  "version": "2.2.23"
 }
