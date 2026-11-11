@@ -1,22 +1,22 @@
 {
-  "assetName": "EMVision-update-2.2.23-win-x64.zip",
-  "downloadUrl": "https://github.com/Rubiya82/EMVision-Releases/releases/download/v2.2.23/EMVision-update-2.2.23-win-x64.zip",
+  "assetName": "EMVision-update-2.2.24-win-x64.zip",
+  "downloadUrl": "https://github.com/Rubiya82/EMVision-Releases/releases/download/v2.2.24/EMVision-update-2.2.24-win-x64.zip",
   "exePath": "EMVision.exe",
-  "exeSha256": "877917c8a852d739be87d2db59c595698d0385c0cef1a371978c0d4a6f17c744",
-  "exeSizeBytes": 10429952,
+  "exeSha256": "e11d41e23002f3adf29863918dedf33b6328e1c3247d062530a447cc66a4e34d",
+  "exeSizeBytes": 10623488,
   "keyId": "emvision-update-2026",
   "platform": "windows-x64",
   "published": true,
-  "publishedAt": "2026-11-11T09:53:52+09:00",
+  "publishedAt": "2026-11-11T17:55:02+09:00",
   "releaseNotes": {
-    "en": "Edge match search about 5x faster, precise model extraction, calibration validity checks and layout editing display fix.",
-    "ko": "에지 패턴 서치 검색 속도 약 5배 개선과 모델 정밀 추출, 캘리브레이션 유효성 검증, 레이아웃 편집 표시 개선"
+    "en": "Fix Edge Match fast search missing thin-stroke (handwriting) models; add cable pick detection unit",
+    "ko": "손글씨 같은 가는 선 모델에서 고속 탐색 빠름이 못 찾던 문제 수정, 케이블 픽업 검출 유닛 추가"
   },
-  "releaseTag": "v2.2.23",
+  "releaseTag": "v2.2.24",
   "schemaVersion": 1,
-  "sha256": "1e49d2ba3fc270112fcf7aced5d6db51da9a089baff0ab527906e3a0b89a0919",
-  "signature": "34741074ff92266f1a53dd7f52ff27c07a43afc58a706c6ace80110b5ad8c34c8761e25699c6442f0e0c05002c53b6ab9c4132ddfc6f8455f96ab787d14731ad",
+  "sha256": "57b42b039b073fd41a55b2d51702590323b40021411d3f607be8543f4a996b19",
+  "signature": "9cab07934693ded80a86cb87dd16ab9df34385594aa669832f763a6a87233d325617c360d758a7d9463cf9c004342da586a0214e00818851a5c9d3abb6e88a2f",
   "signatureAlgorithm": "ecdsa-p256-sha256",
-  "sizeBytes": 4363624,
-  "version": "2.2.23"
+  "sizeBytes": 4432938,
+  "version": "2.2.24"
 }
