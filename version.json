@@ -1,22 +1,22 @@
 {
-  "assetName": "EMVision-update-2.2.24-win-x64.zip",
-  "downloadUrl": "https://github.com/Rubiya82/EMVision-Releases/releases/download/v2.2.24/EMVision-update-2.2.24-win-x64.zip",
+  "assetName": "EMVision-update-2.2.25-win-x64.zip",
+  "downloadUrl": "https://github.com/Rubiya82/EMVision-Releases/releases/download/v2.2.25/EMVision-update-2.2.25-win-x64.zip",
   "exePath": "EMVision.exe",
-  "exeSha256": "e11d41e23002f3adf29863918dedf33b6328e1c3247d062530a447cc66a4e34d",
-  "exeSizeBytes": 10623488,
+  "exeSha256": "b42f85c93bc2c158c984c17ae76aaeb79609d8f1189780c60626671d84d8129f",
+  "exeSizeBytes": 10628608,
   "keyId": "emvision-update-2026",
   "platform": "windows-x64",
   "published": true,
-  "publishedAt": "2026-11-11T17:55:02+09:00",
+  "publishedAt": "2026-11-11T20:54:27+09:00",
   "releaseNotes": {
-    "en": "Fix Edge Match fast search missing thin-stroke (handwriting) models; add cable pick detection unit",
-    "ko": "손글씨 같은 가는 선 모델에서 고속 탐색 빠름이 못 찾던 문제 수정, 케이블 픽업 검출 유닛 추가"
+    "en": "Edge pattern search: fixed fast search missing models whose background edges were removed with a mask (e.g. a box around handwriting). Re-register existing models to apply.",
+    "ko": "에지 패턴 서치: 배경 에지를 마스크로 지운 모델(손글씨 둘레 상자·줄 등)에서 고속 탐색 [빠름] 이 못 찾던 문제 수정. 이미 등록한 모델은 [모델 등록] 을 다시 해야 적용됩니다."
   },
-  "releaseTag": "v2.2.24",
+  "releaseTag": "v2.2.25",
   "schemaVersion": 1,
-  "sha256": "57b42b039b073fd41a55b2d51702590323b40021411d3f607be8543f4a996b19",
-  "signature": "9cab07934693ded80a86cb87dd16ab9df34385594aa669832f763a6a87233d325617c360d758a7d9463cf9c004342da586a0214e00818851a5c9d3abb6e88a2f",
+  "sha256": "99a0c99c202db4443a83a8600dbd46f50644c87612f4dc52d91fa32b8d15377c",
+  "signature": "f91a8a1124836510ed5a3a7ff9276e19a1122e7bcb70302491817c4fb6eccdcf0440b72ff223b304ee61403af82acd0a40459b397ad36e99a8d0862873c51adc",
   "signatureAlgorithm": "ecdsa-p256-sha256",
-  "sizeBytes": 4432938,
-  "version": "2.2.24"
+  "sizeBytes": 4434861,
+  "version": "2.2.25"
 }
