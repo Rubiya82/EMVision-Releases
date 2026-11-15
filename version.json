@@ -1,22 +1,22 @@
 {
-  "assetName": "EMVision-update-2.2.25-win-x64.zip",
-  "downloadUrl": "https://github.com/Rubiya82/EMVision-Releases/releases/download/v2.2.25/EMVision-update-2.2.25-win-x64.zip",
+  "assetName": "EMVision-update-2.2.26-win-x64.zip",
+  "downloadUrl": "https://github.com/Rubiya82/EMVision-Releases/releases/download/v2.2.26/EMVision-update-2.2.26-win-x64.zip",
   "exePath": "EMVision.exe",
-  "exeSha256": "b42f85c93bc2c158c984c17ae76aaeb79609d8f1189780c60626671d84d8129f",
-  "exeSizeBytes": 10628608,
+  "exeSha256": "ea62e513a4e2d2ee624649bc4245ea08352d4ac50cf53b01d6432b8f181165f0",
+  "exeSizeBytes": 11048960,
   "keyId": "emvision-update-2026",
   "platform": "windows-x64",
   "published": true,
-  "publishedAt": "2026-11-11T20:54:27+09:00",
+  "publishedAt": "2026-11-16T02:26:50+09:00",
   "releaseNotes": {
-    "en": "Edge pattern search: fixed fast search missing models whose background edges were removed with a mask (e.g. a box around handwriting). Re-register existing models to apply.",
-    "ko": "에지 패턴 서치: 배경 에지를 마스크로 지운 모델(손글씨 둘레 상자·줄 등)에서 고속 탐색 [빠름] 이 못 찾던 문제 수정. 이미 등록한 모델은 [모델 등록] 을 다시 해야 적용됩니다."
+    "en": "Added the flow graph: view and edit the flow as a node graph (View > Flow Graph, Ctrl+G / web [Graph]). Execution still follows the list order. Fixes include web editing not being blocked during non-stop adjustment mode.",
+    "ko": "플로우 그래프 추가: 플로우를 노드 그래프로 보고 편집합니다(보기 > 플로우 그래프, Ctrl+G / 웹 [그래프]). 실행은 목록 순서 그대로입니다. 논스톱 조정 모드 중 웹 편집이 막히지 않던 문제 등 수정."
   },
-  "releaseTag": "v2.2.25",
+  "releaseTag": "v2.2.26",
   "schemaVersion": 1,
-  "sha256": "99a0c99c202db4443a83a8600dbd46f50644c87612f4dc52d91fa32b8d15377c",
-  "signature": "f91a8a1124836510ed5a3a7ff9276e19a1122e7bcb70302491817c4fb6eccdcf0440b72ff223b304ee61403af82acd0a40459b397ad36e99a8d0862873c51adc",
+  "sha256": "dde95ef3671992483f87a912cd17a8304062d0a5fae657d7391cad3ae37283d7",
+  "signature": "70f145dfd05c3d52f5db1d0d2ace67bea712574426f283b4e1c73927f6c84b976be24630d9a7e9aebad1d1058bee133d9755c8a9d572b7ed64d011c988df541a",
   "signatureAlgorithm": "ecdsa-p256-sha256",
-  "sizeBytes": 4434861,
-  "version": "2.2.25"
+  "sizeBytes": 4640347,
+  "version": "2.2.26"
 }
