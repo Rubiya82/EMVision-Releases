@@ -1,22 +1,22 @@
 {
-  "assetName": "EMVision-update-2.2.28-win-x64.zip",
-  "downloadUrl": "https://github.com/Rubiya82/EMVision-Releases/releases/download/v2.2.28/EMVision-update-2.2.28-win-x64.zip",
+  "assetName": "EMVision-update-2.2.29-win-x64.zip",
+  "downloadUrl": "https://github.com/Rubiya82/EMVision-Releases/releases/download/v2.2.29/EMVision-update-2.2.29-win-x64.zip",
   "exePath": "EMVision.exe",
-  "exeSha256": "a91a26c1eb3c988f67d5c4358182d205809c5d5271a1d4a78ec8b87cffd86d1e",
-  "exeSizeBytes": 11269120,
+  "exeSha256": "812b0f362d53e879ab4d7fc339f08a98e1662453086eb5b30d1fd29cc4bfd857",
+  "exeSizeBytes": 11270144,
   "keyId": "emvision-update-2026",
   "platform": "windows-x64",
   "published": true,
-  "publishedAt": "2026-11-16T19:10:27+09:00",
+  "publishedAt": "2026-11-18T19:19:58+09:00",
   "releaseNotes": {
-    "en": "Flow graph editing: left panel with drag-to-add, three ways to reorder (drag in the scene list, type a number on the U badge, drop on a link or the first/last slot) with a colour preview before dropping, links routed around nodes placed left or above, and IF/SWITCH/parallel/folder adds their end item. Execution and scene files are unchanged.",
-    "ko": "플로우 그래프 편집: 왼쪽 패널에서 처리 항목을 끌어 추가, 실행 순서 변경 3 가지(목록 끌기·U 배지 번호·선/맨 앞·맨 끝에 놓기)와 놓기 전 색 미리 보기, 왼쪽·위 배치 시 연결선 우회, IF·SWITCH·병렬·폴더 추가 시 끝 항목 자동 추가. 실행·씬 파일은 그대로입니다."
+    "en": "Added image-folder (simulation) camera: each capture, including TCP MEASURE, uses the next image in the folder so external programs can test flows such as calibration without cameras or robots",
+    "ko": "카메라 설정에 화상 폴더(시뮬레이션) 추가 — 통신 MEASURE 마다 폴더의 다음 화상으로 계측해 외부 프로그램에서 캘리브레이션 같은 통신 흐름을 카메라·로봇 없이 시험"
   },
-  "releaseTag": "v2.2.28",
+  "releaseTag": "v2.2.29",
   "schemaVersion": 1,
-  "sha256": "44c0407ca07895cfd40f224874e74c5cc8ed50ef295182c77c0ea509d364dc3c",
-  "signature": "7b2f9c3ca92a467b0d585b7e1e89b3831152693665dfa1c6641966cb1d6ec7736e75f7922deebdd9287cad1f29f1a85d9618d5a0a5fe34fc2c2288fae3092747",
+  "sha256": "b4e62954d99fec2be8cb74a1f398c22000fe734da1150599ed1638e81ba03144",
+  "signature": "20a607aaf8b90fd90f54f0663f3045a660198ee7b256571ecef64374734453083c923bfe9f3072e4c39e3df37deddae7332bbfa70f3a4d2505b1fa7d7458681b",
   "signatureAlgorithm": "ecdsa-p256-sha256",
-  "sizeBytes": 4763634,
-  "version": "2.2.28"
+  "sizeBytes": 4762279,
+  "version": "2.2.29"
 }
