@@ -1,22 +1,22 @@
 {
-  "assetName": "EMVision-update-2.2.29-win-x64.zip",
-  "downloadUrl": "https://github.com/Rubiya82/EMVision-Releases/releases/download/v2.2.29/EMVision-update-2.2.29-win-x64.zip",
+  "assetName": "EMVision-update-2.2.30-win-x64.zip",
+  "downloadUrl": "https://github.com/Rubiya82/EMVision-Releases/releases/download/v2.2.30/EMVision-update-2.2.30-win-x64.zip",
   "exePath": "EMVision.exe",
-  "exeSha256": "812b0f362d53e879ab4d7fc339f08a98e1662453086eb5b30d1fd29cc4bfd857",
-  "exeSizeBytes": 11270144,
+  "exeSha256": "d8ef1c5bb2f8e61d6643059c2a41153c58dc41b74567875ca7dc555d0a6a1498",
+  "exeSizeBytes": 11311104,
   "keyId": "emvision-update-2026",
   "platform": "windows-x64",
   "published": true,
-  "publishedAt": "2026-11-18T19:19:58+09:00",
+  "publishedAt": "2026-11-20T00:21:18+09:00",
   "releaseNotes": {
-    "en": "Added image-folder (simulation) camera: each capture, including TCP MEASURE, uses the next image in the folder so external programs can test flows such as calibration without cameras or robots",
-    "ko": "카메라 설정에 화상 폴더(시뮬레이션) 추가 — 통신 MEASURE 마다 폴더의 다음 화상으로 계측해 외부 프로그램에서 캘리브레이션 같은 통신 흐름을 카메라·로봇 없이 시험"
+    "en": "Image master calibration now stops at a step whose mark deviates from the predicted position (wrong axis, reverse or no motion, or a large measurement jump) and reports the likely cause; overlay text is green on a transparent background",
+    "ko": "화상 마스터 캘리브레이션 진행 중 위치 이탈 감시 — 로봇이 다른 축·반대로 움직였거나 측정이 심하게 튀면 그 스텝에서 중단하고 원인을 알림, 화면 글자 녹색·투명 배경"
   },
-  "releaseTag": "v2.2.29",
+  "releaseTag": "v2.2.30",
   "schemaVersion": 1,
-  "sha256": "b4e62954d99fec2be8cb74a1f398c22000fe734da1150599ed1638e81ba03144",
-  "signature": "20a607aaf8b90fd90f54f0663f3045a660198ee7b256571ecef64374734453083c923bfe9f3072e4c39e3df37deddae7332bbfa70f3a4d2505b1fa7d7458681b",
+  "sha256": "663d1c606f41ec22e114a2c3d039e7692532d2c46f9ae73f3d2f2c6d59d3d084",
+  "signature": "c40b33f3a39fb7638a492ce7a4ccc20837acc0d83f4fdba207fa2e9ec33601d1fa739739e4d5aa94cd87cb810fedbaaff0b37a4d0ef0f92857d86c02ed912da5",
   "signatureAlgorithm": "ecdsa-p256-sha256",
-  "sizeBytes": 4762279,
-  "version": "2.2.29"
+  "sizeBytes": 4782969,
+  "version": "2.2.30"
 }
